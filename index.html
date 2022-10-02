@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
+    <title>Bill Payment Calc</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(152, 0, 0));
+        }
+        .container{
+            margin-top: 5%;
+        
+            background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(252, 157, 157));
+        }
+    </style>
+    <div style="background-color: #ffffff;   font-size: 72px; background: -webkit-linear-gradient(#eee, rgb(107, 229, 240)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" class="container w-50 text-center"><h1>Bill Payment Calculation !</h1></div>
+    <div style="margin-top: 0%;" class="container w-50 text-center p-5 shadow ">
+        <label for="inputlg" class="text-center">Bill Payment :</label>
+        <input placeholder="Enter Value..." class="ps-3 form-control input-lg" id="BillPayment" type="text"> <br> <br>
+
+        <label for="inputlg" class="text-center" >Tip Percentage(%) :</label>
+        <input placeholder="Enter Value..." class="ps-3 form-control input-lg" id="TipPer" type="text"> <br> <br>
+
+        <label for="inputlg" class="text-center" >Total Tip :</label>
+        <input class="form-control input-lg" id="TotalTip" disabled type="text"> <br> <br>
+
+        <label for="inputlg" class="text-center" >Total Bill :</label>
+        <input class="form-control input-lg" id="TotalBill" disabled type="text"> <br> <br> <br>
+
+
+        <button class="btn btn-success" onclick="calculate()">Calculate</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
